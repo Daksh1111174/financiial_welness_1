@@ -7,9 +7,4 @@ def analyze_expense(df):
     savings = total_income - total_expense
     ratio = savings / total_income if total_income > 0 else 0
 
-    return {
-        "income": total_income,
-        "expense": total_expense,
-        "savings": savings,
-        "ratio": ratio
-    }
+    return total_income, total_expense, savings, ratio
